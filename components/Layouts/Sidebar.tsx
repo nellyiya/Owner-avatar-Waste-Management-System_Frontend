@@ -63,7 +63,6 @@ const Sidebar = () => {
     const { t } = useTranslation();
     useEffect(() => {
         const user = JSON.parse(localStorage.getItem('userdata') || '{}');
-        console.log('user', user);
         if (user.role === 'householder') {
             setIsUserHOuseholder(true);
         }

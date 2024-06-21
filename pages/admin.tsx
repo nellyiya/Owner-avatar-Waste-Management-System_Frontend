@@ -88,7 +88,7 @@ const Users = () => {
                                             <Select
                                                 id="userSelect"
                                                 options={userOptions}
-                                                onChange={(option) => setFieldValue('collector', option ? option.value : '')}
+                                                onChange={(option:any) => setFieldValue('collector', option ? option.value : '')}
                                                 menuPortalTarget={document.body}
                                                 styles={{
                                                     menuPortal: (base) => ({
