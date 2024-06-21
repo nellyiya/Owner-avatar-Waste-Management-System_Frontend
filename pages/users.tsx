@@ -121,7 +121,7 @@ const Users = () => {
                                 <td className="px-4 py-2">{user?.role}</td>
                                 <td className="px-4 py-2">
                                     {isAdmin && (
-                                        <Button className="bg-primary" onClick={() => showRoleAssignmentModal(user?._id)}>
+                                        <Button className="bg-primary" onClick={() => showRoleAssignmentModal(user?._id!)}>
                                             Assign Role
                                         </Button>
                                     )}
